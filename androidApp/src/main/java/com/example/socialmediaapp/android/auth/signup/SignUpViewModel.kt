@@ -6,7 +6,7 @@ import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 
 class SignUpViewModel:ViewModel() {
-    var uiState by mutableStateOf(SignUpState())
+    var uiState by mutableStateOf(SignUpUiState())
     private set
 
 
@@ -23,7 +23,7 @@ class SignUpViewModel:ViewModel() {
     }
 }
 
-data class  SignUpState(
+data class  SignUpUiState(
     var username: String = "",
     var email: String = "",
     var password: String = ""

@@ -5,7 +5,13 @@ import androidx.compose.ui.Modifier
 
 @Composable
 fun SignUpScreen(
-    modifier:Modifier=Modifier
+    modifier:Modifier=Modifier,
+    uiState: SignUpUiState,
+    onUsernameChange:(String)->Unit,
+    onEmailChange:(String)->Unit,
+    onPasswordChange:(String)->Unit,
+
+
 ){
 
 }
