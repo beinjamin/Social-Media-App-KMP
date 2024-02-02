@@ -15,6 +15,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.input.KeyboardType
 import androidx.room.util.copy
+import com.example.socialmediaapp.android.R
 import com.example.socialmediaapp.android.common.theming.Gray
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -55,8 +56,10 @@ fun PasswordEyeIcon(
     onPasswordVisibilityToggle:()->Unit
 
 ){
-    val image=if (isPasswordVisible){
-        painterResource(id = R.drawable.s)
+    val image= if (isPasswordVisible){
+        painterResource(id = R.drawable.show_eye_icon_filled)
+    } else {
+        painterResource(id = R.drawable.hide_eye_icon_filled)
     }
 
 }
