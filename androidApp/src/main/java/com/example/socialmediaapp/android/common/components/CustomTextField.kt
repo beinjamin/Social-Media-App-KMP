@@ -16,7 +16,6 @@ import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.R
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -24,6 +23,7 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.socialmediaapp.android.R
 import com.example.socialmediaapp.android.common.theming.Gray
 import com.example.socialmediaapp.android.common.theming.SocialAppTheme
 
@@ -111,7 +111,7 @@ fun CustomTextFieldPreview() {
         CustomTextField(
             value = "",
             onValueChange = {},
-            hint = R.string.default_error_message
+            hint = androidx.compose.ui.R.string.default_error_message
         )
     }
 }
