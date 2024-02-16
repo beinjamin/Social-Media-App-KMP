@@ -55,7 +55,7 @@ fun SignUpScreen(
              bottom = LargeSpacing
          ),
       horizontalAlignment = Alignment.CenterHorizontally,
-      verticalArrangement = Arrangement.SpacedBy(LargeSpacing)
+      verticalArrangement = Arrangement.spacedBy(LargeSpacing)
   )
   {
       CustomTextField(
