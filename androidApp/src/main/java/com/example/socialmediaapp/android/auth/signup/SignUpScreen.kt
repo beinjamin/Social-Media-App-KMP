@@ -19,6 +19,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.socialmediaapp.android.R
 import com.example.socialmediaapp.android.common.components.CustomTextField
@@ -26,6 +27,7 @@ import com.example.socialmediaapp.android.common.theming.ButtonHeight
 import com.example.socialmediaapp.android.common.theming.ExtraLargeSpacing
 import com.example.socialmediaapp.android.common.theming.LargeSpacing
 import com.example.socialmediaapp.android.common.theming.MediumSpacing
+import com.example.socialmediaapp.android.common.theming.SocialAppTheme
 
 @Composable
 fun SignUpScreen(
@@ -94,4 +96,17 @@ fun SignUpScreen(
 
   }
 }
+@Preview
+@Composable
+fun SignUpScreenPreview(){
+    SocialAppTheme {
+        SignUpScreen(
+            uiState = SignUpUiState(),
+            onUsernameChange = {},
+            onEmailChange = {},
+            onPasswordChange ={} )
+    }
+
+}
+
 
